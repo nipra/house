@@ -16,11 +16,11 @@
   
   (?<- (stdout)
        [?doc ?line]
-       ((hfs-delimited "/Users/nprabhak/Softwares/Hadoop/Cascalog/Impatient/part1/data/rain.txt" :skip-header? true) ?doc ?line))
+       ((hfs-delimited "/Users/nprabhak/Softwares/Hadoop/Cascalog/Impatient-Cascalog/part1/data/rain.txt" :skip-header? true) ?doc ?line))
 
   (?<- (hfs-delimited "/tmp/out")
        [?doc ?line]
-       ((hfs-delimited "/Users/nprabhak/Softwares/Hadoop/Cascalog/Impatient/part1/data/rain.txt" :skip-header? true) ?doc ?line))
+       ((hfs-delimited "/Users/nprabhak/Softwares/Hadoop/Cascalog/Impatient-Cascalog/part1/data/rain.txt" :skip-header? true) ?doc ?line))
 
   "(nprabhak@nprabhak-mn ~/Projects/Clojure/house)$ hadoop jar target/house-0.1.0-SNAPSHOT-standalone.jar house.scratch /data/rain.txt /cascalog-out"
 
